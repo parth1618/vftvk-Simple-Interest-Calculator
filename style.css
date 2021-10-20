@@ -10,8 +10,15 @@ h1 {
 .maindiv {
   background-color: white;
   color: black;
-  width: 300px;
+  width: 500px; /* Setting to 500 as opposed to 300 (as per exercise) to fit all content */
   padding: 20px;
   border-radius: 25px;
-  align: center;
+  align: center; /* not working as expected */
+  
+  /* added below code to center the div and elements as per requirement */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }

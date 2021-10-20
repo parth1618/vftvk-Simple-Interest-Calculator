@@ -1,8 +1,9 @@
 function compute() {
     var principal = document.getElementById("principal").value;
-    
+
     if (principal <= 0) {
         alert("Enter a positive number");
+        // Setting focus to Amount Input Box
         document.getElementById("principal").focus();
         return false;
     }
@@ -14,6 +15,7 @@ function compute() {
 
     var year = new Date().getFullYear() + parseInt(years);
 
+    // Using span to hold the value and style the span background-color as yellow
     var result = document.getElementById("result");
     result.innerHTML = "If you deposit <span style=\"background-color:yellow\">" + principal + ",</span><br>" +
         "at an interest rate <span style=\"background-color:yellow\">" + rate + "%.</span><br>" +
@@ -23,5 +25,6 @@ function compute() {
 
 function updateRate() {
     var rateval = document.getElementById("rate").value;
+    // rateval is value. Add % to make it more readable as %
     document.getElementById("rate_val").innerText = rateval + "%";
 }
