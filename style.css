@@ -14,11 +14,10 @@ h1 {
   padding: 20px;
   border-radius: 25px;
   align: center; /* not working as expected */
-  
-  /* added below code to center the div and elements as per requirement */
+  margin: auto /* using margin auto to center whole div instead of align */
+}
+/* added below code to center form and result as per formatting */
+.subdiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: auto;
 }
